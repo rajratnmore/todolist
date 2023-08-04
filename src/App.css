@@ -1,38 +1,138 @@
-.App {
+body {
+  background: #537188;
+  background-position: center;
+  /* background-size:  cover; */
+  background-repeat: no-repeat;
+}
+
+.list-container {
+  box-shadow: 0px 0px 5px black;
+  background-color: #E8E8E8;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-left: 20px;
+  width: 400px;
+  height: 70vh;
+  box-sizing: border-box;
+  position: relative;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.heading {
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: #1d3557;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.task-input {
+  width: 350px;
+  /* border: 1px solid red; */
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 40px;
+}
+
+.input-area {
+  height: 40px;
+  border: 2px solid #9BABB8;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-right: none;
+  background: none;
+}
+
+.input-area:focus {
+  box-shadow: none;
+  border: 2px solid #9BABB8;
+  background: none;
+  border-right: none;
+}
+
+.taskbtn {
+  /* background-color: green; */
+  border: 2px solid #9BABB8;
+  font-size: 2.5rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-left: none;
+
+}
+
+.taskbtn:hover {
+  cursor: pointer;
+}
+
+.task-container {
+  /* border: 1px solid red; */
+  width: 360px;
+  height: 250px;
+  padding-left: 2px;
+  padding-bottom: 2px;
+  margin-bottom: 10px;
+  overflow-y: scroll;
+
+}
+
+.task-container::-webkit-scrollbar {
+  width: 5px;
+  /* width of the entire scrollbar */
+}
+
+.task-container::-webkit-scrollbar-track {
+  background: none;
+  /* color of the tracking area */
+}
+
+.task-container::-webkit-scrollbar-thumb {
+  background-color: #8d99ae;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 2px solid none;
+  /* creates padding around scroll thumb */
+}
+
+.task-container {
+  scrollbar-width: auto;
+  /* "auto" or "thin" */
+  scrollbar-color: #8d99ae none;
+  /* scroll thumb and track */
+}
+
+.task-body {
+  margin-top: 10px;
+  width: 350px;
+  background-color: #D3E0EA;
+  /* border: 1px solid blue; */
+  box-shadow: 0px 0px 3px black;
+  display: flex;
+  padding: 10px;
+
+}
+
+.task-content {
+  /* border: 1px solid green; */
+  width: 300px;
+  margin-bottom: 0px;
+  margin-right: 5px;
+}
+
+.btns {
+  /* border: 1px solid yellow; */
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+
+.revome-btn {
+  width: 200px;
+  margin-left: 75px;
+  background-color: #567189;
+  border: none;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
